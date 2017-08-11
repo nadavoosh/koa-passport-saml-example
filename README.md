@@ -12,7 +12,6 @@ Then just:
 ```
 npm install
 npm start
-
 ```
 
 navigating to `localhost:8080` should redirect you for SAML authentication. Once you're authed, you'll be able to hit `localhost:8080` and see the success message. 
