@@ -1,7 +1,7 @@
 # koa-passport-saml-example
 
 
-This is a simple example of using [passport-saml](https://github.com/bergie/passport-saml) with koa. 
+This is a simple example of using [passport-saml](https://github.com/bergie/passport-saml) with [koa-passport](https://github.com/rkusa/koa-passport). 
 
 I made this because this use case is not covered in [koa-passport-example](https://github.com/rkusa/koa-passport-example).
 
