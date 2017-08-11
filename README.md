@@ -5,7 +5,7 @@ This is a simple example of using [passport-saml](https://github.com/bergie/pass
 
 I made this because this use case is not covered in [koa-passport-example](https://github.com/rkusa/koa-passport-example).
 
-To get this working, you'll need to update the `entryPoint`, `issuer`, and `pathToPublicCert` vars in the [`passport.js`](https://github.com/nadavoosh/koa-passport-saml-example/blob/master/passport.js#L21-23) file.
+To get this working, you'll need to update the `entryPoint`, `issuer`, and `pathToPublicCert` vars in the [`passport.js`](https://github.com/nadavoosh/koa-passport-saml-example/blob/master/passport.js#L21-L23) file.
 
 Then just: 
 
