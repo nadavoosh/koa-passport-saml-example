@@ -16,11 +16,17 @@ function onProfile(profile, cb) {
   return cb(null, { email: profile.nameID });
 }
 
+
+// Update the variables below with correct values:
+const entryPoint = 'my-entryPoint-url';
+const issuer = 'my_issuer_name';
+const pathToPublicCert = '/path/to/my.cert';
+
 const samlConf = {
   path: '/auth/saml/callback',
-  entryPoint: 'https://my-saml-provider.com/rest-of-entryPoint-url',
-  issuer: 'my_issuer_name',
-  cert: fs.readFileSync('/path/to/my.cert').toString(),
+  entryPoint,
+  issuer,
+  cert: fs.readFileSync(pathToPublicCert).toString(),
 };
 
 passport.use(new Strategy(samlConf, onProfile));
