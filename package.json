@@ -1,0 +1,29 @@
+{
+  "name": "koa-passport-saml-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadavoosh/koa-passport-saml-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadavoosh/koa-passport-saml-example/issues"
+  },
+  "homepage": "https://github.com/nadavoosh/koa-passport-saml-example#readme",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-generic-session": "^2.0.0",
+    "koa-passport": "^3.0.0",
+    "koa-router": "^7.2.1",
+    "passport": "^0.3.2",
+    "passport-saml": "^0.15.0"
+  }
+}
