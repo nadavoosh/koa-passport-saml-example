@@ -9,10 +9,12 @@ const koaBody = require('koa-body');
 
 const app = new Koa();
 
+// passpport
+app.use(koaPassport.initialize());
+
 // sessions
 app.keys = ['your-session-secret'];
 app.use(session({}));
-app.use(koaPassport.initialize());
 app.use(koaPassport.session());
 
 // body parser
@@ -34,7 +36,7 @@ const authRouter = new Router();
 authRouter.get('/auth/login', koaPassport.authenticate('saml'));
 authRouter.post('/auth/saml/callback', koaPassport.authenticate('saml'), ctx => ctx.redirect('/'));
 
-// other routes - these require authentication
+// other routes - these require authentication!
 const router = new Router();
 router.use(authMiddleware);
 
