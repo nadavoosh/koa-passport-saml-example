@@ -4,6 +4,11 @@ const Strategy = require('passport-saml').Strategy;
 const passport = require('koa-passport');
 const fs = require('fs');
 
+// Update the variables below with correct values:
+const entryPoint = 'my-entryPoint-url';
+const issuer = 'my_issuer_name';
+const pathToPublicCert = '/path/to/my.cert';
+
 passport.serializeUser(function(user, cb) {
   cb(null, user);
 });
@@ -15,12 +20,6 @@ passport.deserializeUser(function(user, cb) {
 function onProfile(profile, cb) {
   return cb(null, { email: profile.nameID });
 }
-
-
-// Update the variables below with correct values:
-const entryPoint = 'my-entryPoint-url';
-const issuer = 'my_issuer_name';
-const pathToPublicCert = '/path/to/my.cert';
 
 const samlConf = {
   path: '/auth/saml/callback',
